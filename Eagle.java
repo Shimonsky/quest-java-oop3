@@ -1,5 +1,3 @@
-import javax.swing.text.Style;
-
 public class Eagle extends Bird implements Fly {
 
     private boolean flying;
@@ -24,6 +22,8 @@ public class Eagle extends Bird implements Fly {
         return "Screech!";
     }
 
+    //printf pour formater du texte avec spécificateurs de format tels que %s, %d, %f, etc., 
+    //pour insérer des valeurs dans la chaîne de format.
     public void takeOff() {
         if(!this.flying && this.altitude == 0) {
             System.out.printf("%s takes off in the sky.%n", this.getName());
